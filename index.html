@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="peach">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080B14">
+  <meta name="theme-color" content="#F5F1E8">
   <meta name="description" content="Portofolio Syifa Aulia, siswi kelas XI Rekayasa Perangkat Lunak di SMK Putra Anda.">
   <title>Syifa Aulia | XI RPL — Portofolio</title>
   <style>
@@ -1159,6 +1159,519 @@
       .workspace-float, .code-cursor { animation: none; }
       .workspace-window { transition: none; }
     }
+
+    /* Warm editorial palette with coral and indigo accents. */
+    :root {
+      color-scheme: light;
+      --bg: #F5F1E8;
+      --surface: #FFFCF6;
+      --surface-light: #EEE9DF;
+      --text: #24231F;
+      --muted: #77736A;
+      --gold: #D45D43;
+      --gold-light: #B84934;
+      --line: rgba(45, 39, 31, .12);
+      --glow: rgba(212, 93, 67, .15);
+      --page-width: 1080px;
+    }
+    html { scroll-padding-top: 100px; }
+    body {
+      background:
+        radial-gradient(ellipse at 86% 7%, rgba(212, 93, 67, .1), transparent 30rem),
+        radial-gradient(ellipse at 4% 44%, rgba(91, 82, 216, .08), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+      font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body::before { display: none; }
+    .topbar { top: 12px; border: 0; background: transparent; }
+    .nav {
+      min-height: 68px;
+      padding: 0 19px;
+      border: 1px solid rgba(45, 39, 31, .1);
+      border-radius: 18px;
+      background: rgba(255, 252, 246, .9);
+      box-shadow: 0 12px 35px rgba(47, 39, 29, .08);
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand-mark {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border: 1px solid rgba(212, 93, 67, .22);
+      border-radius: 13px;
+      background: #FCE5DA;
+      color: #B84934 !important;
+      font-size: .82rem;
+    }
+    .brand-copy { display: flex; flex-direction: column; line-height: 1.25; }
+    .brand-name { color: var(--text) !important; font-size: .86rem; letter-spacing: .02em; }
+    .brand-subtitle { margin-top: 3px; color: #5B52D8 !important; font-size: .59rem; letter-spacing: .09em; }
+    .nav-links { gap: 25px; }
+    .nav-links a, .nav-links a:hover, .nav-links a:focus-visible { color: #68645D; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: #B84934; }
+    .nav-links .nav-cta {
+      padding: 9px 15px;
+      border-color: rgba(212, 93, 67, .3);
+      background: #FCE5DA;
+      color: #A9412E;
+    }
+    .nav-links .nav-cta:hover { background: #F7D6C8; color: #873522; }
+    .menu-toggle { border-color: var(--line); background: var(--surface); color: var(--text); }
+    .hero { padding-top: 145px; padding-bottom: 90px; }
+    .hero::after { background: rgba(91, 82, 216, .12); }
+    .hero-grid { grid-template-columns: 1.08fr .92fr; gap: clamp(34px, 5vw, 72px); }
+    .eyebrow {
+      padding: 7px 11px;
+      border: 1px solid rgba(212, 93, 67, .2);
+      border-radius: 999px;
+      background: rgba(255, 252, 246, .8);
+      color: #A9412E;
+      font-size: .74rem;
+      letter-spacing: .04em;
+    }
+    .eyebrow::before { background: var(--gold); box-shadow: 0 0 0 4px rgba(212, 93, 67, .12); }
+    h1 { letter-spacing: -.08em; }
+    h1 span { background: linear-gradient(100deg, #C34F37, #5B52D8); background-clip: text; }
+    .hero-copy, .section-intro { color: var(--muted); }
+    .button {
+      border-color: rgba(45, 39, 31, .12);
+      border-radius: 13px;
+      background: rgba(255, 252, 246, .84);
+      box-shadow: 0 5px 15px rgba(47, 39, 29, .045);
+      color: var(--text);
+    }
+    .button:hover { border-color: rgba(212, 93, 67, .4); }
+    .button-primary, .button-primary:hover {
+      border-color: transparent;
+      background: #D45D43;
+      color: #FFFCF6;
+    }
+    .button-primary:hover { background: #BD4D35; }
+    .hero-stat {
+      border-color: rgba(45, 39, 31, .1);
+      background: rgba(255, 252, 246, .82);
+      color: #68645D;
+    }
+    .hero-stat strong { color: #24231F; }
+    .hero-workspace::before {
+      border-color: rgba(91, 82, 216, .18);
+      background: radial-gradient(ellipse, rgba(91, 82, 216, .09), transparent 68%);
+    }
+    .hero-workspace::after { border-color: rgba(212, 93, 67, .13); }
+    .workspace-window {
+      border-color: rgba(45, 39, 31, .13);
+      border-radius: 20px;
+      background: #FFFCF6;
+      box-shadow: 0 30px 70px rgba(47, 39, 29, .15), 0 0 60px rgba(91, 82, 216, .07);
+    }
+    .hero-workspace:hover .workspace-window { border-color: rgba(91, 82, 216, .32); }
+    .workspace-topbar { border-color: rgba(45, 39, 31, .1); background: #F0EBE2; }
+    .workspace-file { color: #4E4A43; }
+    .workspace-index, .code-number { color: #9A9286; }
+    .workspace-editor {
+      background-image: linear-gradient(rgba(91, 82, 216, .045) 1px, transparent 1px);
+    }
+    .code-line { color: #4C4A46; }
+    .code-tag { color: #5B52D8; }
+    .code-attr { color: #77736A; }
+    .code-value { color: #B84934; }
+    .code-cursor { background: #D45D43; }
+    .workspace-preview { border-color: rgba(91, 82, 216, .14); background: #F4F0FA; }
+    .preview-label { color: #77736A; }
+    .preview-live { color: #77736A; }
+    .preview-live i { background: #5B52D8; box-shadow: 0 0 8px rgba(91, 82, 216, .35); }
+    .preview-card {
+      border-color: rgba(91, 82, 216, .12);
+      background: radial-gradient(ellipse at 88% 12%, rgba(91, 82, 216, .11), transparent 48%), #FFFCF6;
+    }
+    .preview-kicker, .preview-link { color: #5B52D8; }
+    .preview-card strong { color: #24231F; }
+    .preview-caption { color: #77736A; }
+    .workspace-float {
+      border-color: rgba(45, 39, 31, .12);
+      background: rgba(255, 252, 246, .96);
+      box-shadow: 0 14px 32px rgba(47, 39, 29, .12);
+      color: #393630;
+    }
+    .workspace-float-sub { color: #77736A; }
+    .workspace-float-icon {
+      border-color: rgba(91, 82, 216, .2);
+      background: #EEEBFC;
+      color: #5B52D8;
+    }
+    .drum-mark { border-color: rgba(212, 93, 67, .2); background: #FCE5DA; color: #B84934; }
+    .workspace-orbit-one { background: #D45D43; box-shadow: 0 0 18px rgba(212, 93, 67, .5); }
+    .workspace-orbit-two { background: #5B52D8; box-shadow: 0 0 16px rgba(91, 82, 216, .45); }
+    section { padding: 88px 0; }
+    #keahlian, #sertifikat { background: rgba(232, 225, 213, .55); }
+    .section-label { color: #B84934; }
+    .section-label::before { color: #5B52D8; }
+    .panel, .activity-note, .certificate-howto {
+      border-color: rgba(45, 39, 31, .1);
+      background: rgba(255, 252, 246, .82);
+      box-shadow: 0 14px 38px rgba(47, 39, 29, .05);
+      backdrop-filter: blur(12px);
+    }
+    .panel p, .activity-card p, .activity-note p { color: #68645D; }
+    .fact-label { color: #77736A; }
+    .fact-value { color: var(--text); }
+    .skills-intro {
+      border-color: rgba(91, 82, 216, .15);
+      background: linear-gradient(145deg, #EEEBFC, #FFFCF6 74%);
+      box-shadow: 0 18px 42px rgba(47, 39, 29, .07);
+    }
+    .skills-intro-icon { background: #E3DFFC; color: #5B52D8; }
+    .skills-kicker { color: #5B52D8; }
+    .skills-intro p, .skills-facts dt { color: #68645D; }
+    .skills-facts { border-color: rgba(45, 39, 31, .1); }
+    .skills-facts dd { color: #393630; }
+    .skill-card {
+      border-color: rgba(45, 39, 31, .1);
+      background: #FFFCF6;
+      box-shadow: 0 10px 26px rgba(47, 39, 29, .045);
+    }
+    .skill-card:hover { box-shadow: 0 15px 36px rgba(47, 39, 29, .1); }
+    .skill-category { color: #77736A; }
+    .skill-card h3 { color: #24231F; }
+    .skill-card p { color: #77736A; }
+    .skill-status { color: #5B52D8; }
+    .skill-accent-line { background: rgba(45, 39, 31, .1); }
+    .skill-accent-line::after { opacity: .95; }
+    .skill { border-color: rgba(91, 82, 216, .17); background: #EEEBFC; color: #4E45C2; }
+    .project-card, .certificate-card {
+      border-color: rgba(45, 39, 31, .1);
+      background: #FFFCF6;
+      box-shadow: 0 14px 36px rgba(47, 39, 29, .055);
+    }
+    .project-card:hover { border-color: rgba(212, 93, 67, .35); box-shadow: 0 20px 45px rgba(47, 39, 29, .1); }
+    .project-icon { border-color: rgba(212, 93, 67, .18); background: #FCE5DA; color: #B84934; }
+    .project-card p, .certificate-card p { color: #68645D; }
+    .project-tags span, .certificate-card .certificate-date { color: #5B52D8; }
+    .project-tags span + span::before { color: #B7AEA1; }
+    .activity-card {
+      border-color: rgba(212, 93, 67, .18);
+      background: radial-gradient(circle at 90% 10%, rgba(212, 93, 67, .12), transparent 48%), #FFFCF6;
+      box-shadow: 0 18px 42px rgba(47, 39, 29, .065);
+    }
+    .activity-card::after {
+      border-color: rgba(91, 82, 216, .14);
+      box-shadow: 0 0 0 22px rgba(91, 82, 216, .035), 0 0 0 46px rgba(91, 82, 216, .025);
+    }
+    .activity-icon { color: #B84934; }
+    .certificate-art { border-color: rgba(91, 82, 216, .14); background: #EEEBFC; color: #5B52D8; }
+    .certificate-placeholder { border-color: rgba(91, 82, 216, .22); background: rgba(255, 252, 246, .58); color: #77736A; }
+    .certificate-placeholder .plus { border-color: rgba(212, 93, 67, .23); background: #FCE5DA; color: #B84934; }
+    .certificate-placeholder h3, .certificate-howto summary { color: var(--text); }
+    .certificate-howto { color: #68645D; }
+    .certificate-howto pre { border-color: rgba(45, 39, 31, .1); background: #24231F; color: #F5F1E8; }
+    .certificate-howto code { background: #EEEBFC; color: #4E45C2; }
+    .contact { border-color: rgba(212, 93, 67, .17); background: radial-gradient(ellipse at 92% 8%, rgba(212, 93, 67, .1), transparent 50%), #FFFCF6; box-shadow: 0 20px 50px rgba(47, 39, 29, .065); }
+    .contact-panel {
+      border-color: rgba(45, 39, 31, .1);
+      background: rgba(255, 252, 246, .9);
+      box-shadow: 0 14px 38px rgba(47, 39, 29, .055);
+    }
+    .contact-method-icon { border-color: rgba(91, 82, 216, .17); background: #EEEBFC; color: #5B52D8; }
+    .contact-method-label, .contact-edit-note, .contact-form-top span { color: #77736A; }
+    .contact-method-value { color: #393630; }
+    a.contact-method-value:hover, .contact-number { color: #5B52D8; }
+    .contact-edit-note code, .contact-form-top h3 { color: #5B52D8; }
+    .contact-form-top { border-color: rgba(45, 39, 31, .1); }
+    .contact-field label { color: #68645D; }
+    .contact-field input, .contact-field textarea {
+      border-color: rgba(45, 39, 31, .13);
+      background: #F8F5EF;
+      color: #24231F;
+    }
+    .contact-field input::placeholder, .contact-field textarea::placeholder { color: #9A9286; }
+    .contact-field input:focus, .contact-field textarea:focus { border-color: rgba(91, 82, 216, .55); box-shadow: 0 0 0 3px rgba(91, 82, 216, .1); }
+    .contact-form-status { color: #68645D; }
+    .contact-form-status[data-state="error"] { color: #B84934; }
+    .contact-form-status[data-state="success"] { color: #4E45C2; }
+    footer { border-color: rgba(45, 39, 31, .12); color: #77736A; }
+    footer a:hover { color: #B84934; }
+    :focus-visible { outline-color: #5B52D8; }
+
+    @media (max-width: 760px) {
+      .topbar { top: 8px; }
+      .nav { width: calc(100% - 28px); padding: 8px 12px; }
+      .nav-links {
+        top: calc(100% + 8px);
+        right: 0;
+        left: 0;
+        padding: 12px 16px 16px;
+        border: 1px solid rgba(45, 39, 31, .1);
+        border-radius: 16px;
+        background: rgba(255, 252, 246, .97);
+        box-shadow: 0 18px 40px rgba(47, 39, 29, .12);
+        backdrop-filter: blur(18px);
+      }
+      .nav-links a, .nav-links a:hover, .nav-links a:focus-visible { color: #68645D; }
+      .nav-links .nav-cta { color: #A9412E; }
+      .hero { padding-top: 116px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      section { padding: 68px 0; }
+    }
+    @media (max-width: 420px) {
+      .hero h1 { font-size: clamp(3.3rem, 17vw, 4.5rem); }
+    }
+    .hero-grid { grid-template-columns: 1fr 1fr; gap: clamp(38px, 7vw, 90px); }
+    .hero-grid > div:first-child { position: relative; z-index: 1; }
+    .hero-art { position: relative; width: 100%; max-width: 475px; justify-self: end; padding: 18px 12px 38px 0; }
+    .hero-art-frame {
+      position: relative;
+      display: grid;
+      min-height: 470px;
+      grid-template-rows: auto 1fr auto;
+      align-items: center;
+      overflow: hidden;
+      padding: 24px 26px 25px;
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 32px 32px 110px 32px;
+      background: linear-gradient(145deg, var(--hero-dark), var(--hero-deep) 75%);
+      box-shadow: 0 32px 76px rgba(35, 28, 65, .24);
+      isolation: isolate;
+    }
+    .hero-art-frame::before {
+      position: absolute;
+      z-index: -1;
+      top: 17%;
+      right: -12%;
+      width: 75%;
+      aspect-ratio: 1;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 50%;
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, .035), 0 0 0 48px rgba(255, 255, 255, .025);
+      content: "";
+    }
+    .hero-art-topline { display: flex; justify-content: space-between; gap: 12px; color: rgba(255, 255, 255, .72); font: 600 .62rem "Fira Code", ui-monospace, Consolas, monospace; letter-spacing: .1em; }
+    .hero-illustration-wrap { position: relative; display: grid; min-height: 310px; place-items: center; }
+    .hero-illustration { width: min(100%, 380px); overflow: visible; color: var(--hero-pop); filter: drop-shadow(0 20px 24px rgba(10, 8, 30, .18)); animation: illustration-float 6s ease-in-out infinite; }
+    .illustration-orbit { transform-origin: 215px 214px; animation: orbit-spin 32s linear infinite; }
+    .hero-art-label { position: absolute; z-index: 2; display: grid; width: 80px; height: 80px; align-content: center; border-radius: 50%; text-align: center; font: 600 .55rem/1.5 "Fira Code", ui-monospace, Consolas, monospace; letter-spacing: .08em; }
+    .hero-art-label b { color: var(--accent); font-size: 1.05rem; line-height: 1.1; }
+    .hero-art-label-top { top: 27%; left: 3%; border: 1px solid rgba(255, 255, 255, .58); background: var(--card-bg); color: var(--hero-deep); rotate: -12deg; animation: label-float 5s ease-in-out infinite; }
+    .hero-art-label-side { top: 42%; right: 4%; background: var(--hero-pop); color: var(--hero-deep); rotate: 10deg; animation: label-float 5.5s -2s ease-in-out infinite; }
+    .hero-art-caption { display: grid; gap: 6px; padding: 5px 0 0 8px; color: var(--card-bg); }
+    .hero-art-caption span { color: var(--hero-pop); font: 600 .61rem "Fira Code", ui-monospace, Consolas, monospace; letter-spacing: .12em; }
+    .hero-art-caption strong { font-size: clamp(1.2rem, 2.2vw, 1.55rem); letter-spacing: -.05em; line-height: 1.15; }
+    .hero-art-index { position: absolute; right: 0; bottom: 5px; color: var(--copy); font: 600 .63rem "Fira Code", ui-monospace, Consolas, monospace; letter-spacing: .08em; }
+    .hero-art-index span { color: var(--accent); }
+    .contact-channels { display: grid; gap: 14px; }
+    .contact-channel {
+      display: flex;
+      min-height: 72px;
+      align-items: center;
+      gap: 13px;
+      padding: 13px;
+      border: 1px solid rgba(45, 39, 31, .1);
+      border-radius: 15px;
+      background: rgba(255, 252, 246, .75);
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+    .contact-channel:not([aria-disabled="true"]):hover { transform: translateY(-2px); border-color: rgba(91, 82, 216, .3); background: #FFFCF6; }
+    .contact-channel[aria-disabled="true"] { cursor: default; }
+    .contact-channel-icon { display: grid; width: 42px; height: 42px; flex: 0 0 auto; place-items: center; border-radius: 13px; background: #EEEBFC; color: #5B52D8; }
+    .contact-channel-icon svg { width: 19px; height: 19px; }
+    .contact-channel-copy { display: grid; min-width: 0; gap: 2px; }
+    .contact-channel-copy strong { color: #24231F; font-size: .88rem; }
+    .contact-channel-copy span { overflow-wrap: anywhere; color: #77736A; font-size: .76rem; }
+    .contact-channel-arrow { margin-left: auto; color: #B84934; font-size: 1rem; }
+    .contact-edit-note { margin-top: 16px; }
+    .contact-github { display: none; }
+    @media (max-width: 760px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 34px; }
+      .hero-art { width: min(100%, 475px); justify-self: center; padding-right: 0; }
+      .hero-art-frame { min-height: 440px; }
+    }
+    @media (max-width: 420px) {
+      .hero-art { padding-bottom: 32px; }
+      .hero-art-frame { min-height: 385px; padding: 19px; border-bottom-right-radius: 74px; }
+      .hero-illustration-wrap { min-height: 255px; }
+      .hero-art-label { width: 66px; height: 66px; font-size: .49rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .contact-channel { transition: none; }
+    }
+
+    :root {
+      --page-bg: #F5F1E8;
+      --card-bg: #FFFCF6;
+      --ink: #24231F;
+      --copy: #77736A;
+      --accent: #C34F37;
+      --accent-soft: #FCE5DA;
+      --accent-two: #5B52D8;
+      --accent-two-soft: #EEEBFC;
+      --hero-dark: #39336D;
+      --hero-deep: #242044;
+      --hero-pop: #F5C85B;
+      --page-glow: rgba(212, 93, 67, .1);
+      --line-color: rgba(45, 39, 31, .12);
+    }
+    :root[data-theme="lavender"] {
+      --page-bg: #F2F0FF;
+      --card-bg: #FCFBFF;
+      --ink: #25233A;
+      --copy: #77748A;
+      --accent: #7158D8;
+      --accent-soft: #ECE7FF;
+      --accent-two: #D85E8A;
+      --accent-two-soft: #FBE7F0;
+      --hero-dark: #292351;
+      --hero-deep: #1D193D;
+      --hero-pop: #FC83A3;
+      --page-glow: rgba(113, 88, 216, .12);
+      --line-color: rgba(46, 39, 83, .12);
+    }
+    :root[data-theme="ocean"] {
+      --page-bg: #EAF4F5;
+      --card-bg: #F8FEFF;
+      --ink: #173039;
+      --copy: #687F84;
+      --accent: #087F8C;
+      --accent-soft: #D9F0EF;
+      --accent-two: #C56C37;
+      --accent-two-soft: #F8EBDD;
+      --hero-dark: #123B48;
+      --hero-deep: #0D2935;
+      --hero-pop: #F0A166;
+      --page-glow: rgba(8, 127, 140, .12);
+      --line-color: rgba(23, 48, 57, .12);
+    }
+    body {
+      background:
+        radial-gradient(ellipse at 86% 7%, var(--page-glow), transparent 31rem),
+        radial-gradient(ellipse at 4% 46%, var(--accent-two-soft), transparent 32rem),
+        var(--page-bg);
+      color: var(--ink);
+      transition: background-color .35s ease, color .35s ease;
+    }
+    .nav, .nav-links, .menu-toggle, .panel, .activity-note, .project-card,
+    .certificate-card, .certificate-howto, .contact, .contact-panel,
+    .skills-intro, .skill-card, .contact-channel, .button {
+      transition: background-color .35s ease, border-color .35s ease, color .35s ease, box-shadow .35s ease;
+    }
+    .nav { border-color: var(--line-color); background: color-mix(in srgb, var(--card-bg) 91%, transparent); }
+    .brand-mark { border-color: color-mix(in srgb, var(--accent) 24%, transparent); background: var(--accent-soft); color: var(--accent) !important; }
+    .brand-name { color: var(--ink) !important; }
+    .brand-subtitle { color: var(--accent-two) !important; }
+    .nav-links a, .nav-links a:hover, .nav-links a:focus-visible { color: var(--copy); }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--accent); }
+    .nav-links .nav-cta { border-color: color-mix(in srgb, var(--accent) 28%, transparent); background: var(--accent-soft); color: var(--accent); }
+    .nav-links .nav-cta:hover { background: color-mix(in srgb, var(--accent-soft) 72%, var(--accent)); color: var(--ink); }
+    .menu-toggle { border-color: var(--line-color); background: var(--card-bg); color: var(--ink); }
+    .hero::after { background: var(--page-glow); animation: ambient-breathe 8s ease-in-out infinite alternate; }
+    .eyebrow { border-color: color-mix(in srgb, var(--accent) 22%, transparent); background: color-mix(in srgb, var(--card-bg) 82%, transparent); color: var(--accent); }
+    .eyebrow::before { background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent); }
+    .hero h1 { max-width: 650px; font-size: clamp(3.8rem, 8.2vw, 7rem); line-height: .94; letter-spacing: -.085em; }
+    .hero h1 span { background: linear-gradient(105deg, var(--accent), var(--accent-two), var(--accent)); background-size: 200% 100%; background-clip: text; -webkit-text-fill-color: transparent; animation: name-gradient 8s ease-in-out infinite; }
+    .hero h1 i { color: var(--hero-pop); font-style: normal; }
+    .hero-copy, .section-intro { color: var(--copy); }
+    .button { border-color: var(--line-color); background: var(--card-bg); color: var(--ink); }
+    .button-primary, .button-primary:hover { border-color: transparent; background: var(--accent); color: #fff; }
+    .button-primary:hover { filter: brightness(.92); }
+    .hero-stat { border-color: var(--line-color); background: color-mix(in srgb, var(--card-bg) 86%, transparent); color: var(--copy); }
+    .hero-stat strong { color: var(--ink); }
+    .hero-art-frame {
+      background:
+        radial-gradient(circle at 80% 25%, color-mix(in srgb, var(--accent-two) 38%, transparent), transparent 35%),
+        radial-gradient(circle at 14% 80%, color-mix(in srgb, var(--accent) 30%, transparent), transparent 42%),
+        linear-gradient(155deg, var(--hero-dark), var(--hero-deep) 72%);
+    }
+    .hero-art-label-top { border-color: color-mix(in srgb, var(--hero-pop) 45%, transparent); }
+    .hero-art-caption span { color: var(--hero-pop); }
+    .hero-art-index { color: var(--copy); }
+    .hero-art-index span { color: var(--accent); }
+    section { color: var(--ink); }
+    #keahlian, #sertifikat { background: color-mix(in srgb, var(--accent-two-soft) 52%, transparent); }
+    .section-label { color: var(--accent); }
+    .section-label::before { color: var(--accent-two); }
+    .panel, .activity-note, .certificate-howto, .contact-panel { border-color: var(--line-color); background: color-mix(in srgb, var(--card-bg) 88%, transparent); }
+    .panel p, .activity-card p, .activity-note p { color: var(--copy); }
+    .fact-label, .contact-method-label, .contact-edit-note, .contact-form-top span { color: var(--copy); }
+    .fact-value, .contact-panel h3, .contact-method-value { color: var(--ink); }
+    .skills-intro { border-color: color-mix(in srgb, var(--accent-two) 20%, transparent); background: linear-gradient(145deg, var(--accent-two-soft), var(--card-bg) 76%); }
+    .skills-intro-icon, .skill-mark, .certificate-art, .contact-method-icon, .contact-channel-icon { background: var(--accent-two-soft); color: var(--accent-two); }
+    .skills-kicker, .skill-status, .project-tags span, .certificate-card .certificate-date, .contact-form-top h3 { color: var(--accent-two); }
+    .skills-intro p, .skills-facts dt, .skill-card p, .project-card p, .certificate-card p, .activity-note p { color: var(--copy); }
+    .skills-facts { border-color: var(--line-color); }
+    .skills-facts dd, .skill-card h3 { color: var(--ink); }
+    .skill-card, .project-card, .certificate-card { border-color: var(--line-color); background: var(--card-bg); }
+    .project-icon, .certificate-placeholder .plus { border-color: color-mix(in srgb, var(--accent) 20%, transparent); background: var(--accent-soft); color: var(--accent); }
+    .skill { border-color: color-mix(in srgb, var(--accent-two) 19%, transparent); background: var(--accent-two-soft); color: var(--accent-two); }
+    .activity-card { border-color: color-mix(in srgb, var(--accent) 20%, transparent); background: radial-gradient(circle at 90% 10%, var(--accent-soft), transparent 50%), var(--card-bg); }
+    .activity-icon, .activity-card h3, .activity-note h3 { color: var(--accent); }
+    .certificate-placeholder { border-color: color-mix(in srgb, var(--accent-two) 25%, transparent); background: color-mix(in srgb, var(--card-bg) 60%, transparent); }
+    .certificate-placeholder h3, .certificate-howto summary { color: var(--ink); }
+    .certificate-howto { color: var(--copy); }
+    .certificate-howto pre { border-color: var(--line-color); background: var(--hero-deep); color: var(--card-bg); }
+    .certificate-howto code { background: var(--accent-two-soft); color: var(--accent-two); }
+    .contact { border-color: color-mix(in srgb, var(--accent) 18%, transparent); background: radial-gradient(ellipse at 92% 8%, var(--accent-soft), transparent 52%), var(--card-bg); }
+    .contact-method-icon { border-color: color-mix(in srgb, var(--accent-two) 20%, transparent); }
+    .contact-method-value:hover, .contact-number, .contact-channel-arrow { color: var(--accent-two); }
+    .contact-edit-note code { color: var(--accent-two); }
+    .contact-form-top { border-color: var(--line-color); }
+    .contact-field label { color: var(--copy); }
+    .contact-field input, .contact-field textarea { border-color: var(--line-color); background: var(--page-bg); color: var(--ink); }
+    .contact-field input::placeholder, .contact-field textarea::placeholder { color: var(--copy); }
+    .contact-field input:focus, .contact-field textarea:focus { border-color: var(--accent-two); box-shadow: 0 0 0 3px var(--accent-two-soft); }
+    .contact-form-status { color: var(--copy); }
+    .contact-form-status[data-state="error"] { color: var(--accent); }
+    .contact-form-status[data-state="success"] { color: var(--accent-two); }
+    .contact-channel { border-color: var(--line-color); background: color-mix(in srgb, var(--card-bg) 78%, transparent); }
+    .contact-channel:not([aria-disabled="true"]):hover { border-color: color-mix(in srgb, var(--accent-two) 34%, transparent); background: var(--card-bg); }
+    .contact-channel-copy strong { color: var(--ink); }
+    .contact-channel-copy span { color: var(--copy); }
+    footer { border-color: var(--line-color); color: var(--copy); }
+    footer a:hover { color: var(--accent); }
+    :focus-visible { outline-color: var(--accent-two); }
+
+    .theme-switch { display: flex; align-items: center; gap: 5px; padding: 4px; border: 1px solid var(--line-color); border-radius: 999px; background: color-mix(in srgb, var(--card-bg) 80%, transparent); }
+    .theme-choice { display: grid; width: 28px; height: 28px; place-items: center; padding: 0; border: 1px solid transparent; border-radius: 50%; background: transparent; cursor: pointer; }
+    .theme-choice[aria-pressed="true"] { border-color: var(--ink); }
+    .theme-choice:hover { transform: scale(1.1); }
+    .theme-swatch { width: 15px; height: 15px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .12); }
+    .theme-swatch-peach { background: linear-gradient(135deg, #C34F37 50%, #5B52D8 50%); }
+    .theme-swatch-lavender { background: linear-gradient(135deg, #7158D8 50%, #D85E8A 50%); }
+    .theme-swatch-ocean { background: linear-gradient(135deg, #087F8C 50%, #C56C37 50%); }
+
+    .hero .eyebrow, .hero h1, .hero-copy, .hero-actions, .hero-stats { animation: rise-in .75s both; }
+    .hero h1 { animation-delay: .08s; }
+    .hero-copy { animation-delay: .16s; }
+    .hero-actions { animation-delay: .24s; }
+    .hero-stats { animation-delay: .32s; }
+    .hero-art-frame { animation: art-arrive 1s .12s both cubic-bezier(.2, .8, .2, 1); }
+    @keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes art-arrive { from { opacity: 0; transform: translateY(20px) rotate(3deg) scale(.97); } to { opacity: 1; transform: translateY(0) rotate(0) scale(1); } }
+    @keyframes illustration-float { 0%, 100% { translate: 0 0; rotate: 0deg; } 50% { translate: 0 -7px; rotate: -1deg; } }
+    @keyframes label-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
+    @keyframes orbit-spin { to { rotate: 360deg; } }
+    @keyframes name-gradient { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+    @keyframes ambient-breathe { from { opacity: .65; scale: .92; } to { opacity: 1; scale: 1.08; } }
+
+    @media (max-width: 960px) {
+      .nav-links { gap: 17px; }
+      .nav-links a { font-size: .82rem; }
+    }
+    @media (max-width: 760px) {
+      .nav-links { gap: 0; }
+      .nav-links.is-open { border-color: var(--line-color); background: color-mix(in srgb, var(--card-bg) 97%, transparent); }
+      .nav-links .theme-switch { align-self: flex-start; margin: 8px 0 12px; }
+      .nav-links .nav-cta { margin-top: 0; }
+      .hero h1 { font-size: clamp(3.5rem, 14vw, 5.4rem); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero::after, .hero .eyebrow, .hero h1, .hero h1 span, .hero-copy, .hero-actions,
+      .hero-stats, .hero-art-frame, .hero-illustration, .illustration-orbit,
+      .hero-art-label { animation: none !important; }
+      .theme-choice:hover { transform: none; }
+      body, .nav, .nav-links, .menu-toggle, .panel, .activity-note, .project-card,
+      .certificate-card, .certificate-howto, .contact, .contact-panel,
+      .skills-intro, .skill-card, .contact-channel, .button { transition: none; }
+    }
   </style>
 </head>
 <body>
@@ -1182,6 +1695,11 @@
         <a href="#proyek">Proyek</a>
         <a href="#sertifikat">Sertifikat</a>
         <a href="#kegiatan">Kegiatan</a>
+        <div class="theme-switch" role="group" aria-label="Pilih tema warna">
+          <button class="theme-choice" type="button" data-theme-choice="peach" aria-label="Tema peach" aria-pressed="true" title="Peach"><span class="theme-swatch theme-swatch-peach" aria-hidden="true"></span></button>
+          <button class="theme-choice" type="button" data-theme-choice="lavender" aria-label="Tema lavender" aria-pressed="false" title="Lavender"><span class="theme-swatch theme-swatch-lavender" aria-hidden="true"></span></button>
+          <button class="theme-choice" type="button" data-theme-choice="ocean" aria-label="Tema ocean" aria-pressed="false" title="Ocean"><span class="theme-swatch theme-swatch-ocean" aria-hidden="true"></span></button>
+        </div>
         <a class="nav-cta" href="#kontak">Hubungi saya <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
@@ -1191,9 +1709,9 @@
     <section class="hero" id="beranda">
       <div class="hero-grid container">
         <div>
-          <span class="eyebrow">Pelajar RPL · kreatif · suka belajar</span>
-          <h1>Halo, saya<br><span>Syifa Aulia.</span></h1>
-          <p class="hero-copy">Siswi Rekayasa Perangkat Lunak yang sedang membangun langkah pertama di dunia teknologi. Saya suka mengubah rasa ingin tahu menjadi karya, sambil tetap aktif dan kompak bersama tim drumband.</p>
+          <span class="eyebrow">Siswi RPL <span aria-hidden="true">✳</span> kreator dalam proses</span>
+          <h1>Hai, aku<br><span>Syifa Aulia</span><i aria-hidden="true">.</i></h1>
+          <p class="hero-copy">Sedang merangkai rasa ingin tahu menjadi karya digital. Satu ide, satu eksperimen, satu langkah kecil setiap hari.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#proyek">Lihat proyek <span aria-hidden="true">↓</span></a>
             <a class="button" href="#sertifikat">Sertifikat saya</a>
@@ -1204,43 +1722,40 @@
             <span class="hero-stat">Anggota drumband</span>
           </div>
         </div>
-        <aside class="hero-workspace" aria-label="Cuplikan ruang belajar coding Syifa">
-          <div class="workspace-window">
-            <div class="workspace-topbar">
-              <div class="workspace-dots" aria-hidden="true"><i></i><i></i><i></i></div>
-              <span class="workspace-file">ruang-belajar.html</span>
-              <span class="workspace-index">01 / 03</span>
+        <aside class="hero-art" aria-label="Ilustrasi kreatif perjalanan belajar Syifa">
+          <div class="hero-art-frame">
+            <div class="hero-art-topline"><span>RUANG IDE SYIFA</span><span>01 — 03</span></div>
+            <span class="hero-art-label hero-art-label-top">IDE KECIL<br><b>✳</b></span>
+            <div class="hero-illustration-wrap" aria-hidden="true">
+              <svg class="hero-illustration" viewBox="0 0 420 390" fill="none">
+                <path class="illustration-orbit" d="M61 214c0-87 69-157 154-157s154 70 154 157-69 157-154 157S61 301 61 214Z" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 8"/>
+                <path d="M103 219c0-62 50-112 112-112s112 50 112 112-50 112-112 112-112-50-112-112Z" fill="var(--hero-pop)" opacity=".2"/>
+                <rect x="115" y="111" width="190" height="151" rx="22" transform="rotate(-7 115 111)" fill="var(--card-bg)" stroke="var(--card-bg)" stroke-width="2"/>
+                <rect x="133" y="132" width="154" height="108" rx="12" transform="rotate(-7 133 132)" fill="var(--hero-deep)"/>
+                <path d="m154 165 14 14-14 14m25 0h39" stroke="var(--hero-pop)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-7 154 165)"/>
+                <circle cx="172" cy="216" r="4" fill="var(--accent-two)"/>
+                <circle cx="186" cy="216" r="4" fill="var(--hero-pop)"/>
+                <circle cx="200" cy="216" r="4" fill="var(--accent)"/>
+                <path d="m111 269 197-25 14 17-197 25-14-17Z" fill="var(--accent-two)"/>
+                <path d="m133 271 148-19" stroke="var(--card-bg)" stroke-width="2" stroke-linecap="round" opacity=".75"/>
+                <path d="m132 286 152-20 16 8-151 22-17-10Z" fill="var(--accent)"/>
+                <path d="m163 287 74-10" stroke="var(--card-bg)" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+                <path d="m239 120 29-34 27 24-29 34-27-24Z" fill="var(--hero-pop)"/>
+                <path d="m247 119 21-25 12 10-21 25-12-10Z" fill="var(--card-bg)" opacity=".8"/>
+                <path d="m270 89 7-9 27 24-7 9-27-24Z" fill="var(--accent)"/>
+                <circle cx="98" cy="139" r="11" fill="var(--accent-two)"/>
+                <circle cx="324" cy="272" r="8" fill="var(--hero-pop)"/>
+                <path d="m103 279 6 13 14 2-10 10 2 14-12-7-12 7 2-14-10-10 14-2 6-13Z" fill="var(--hero-pop)"/>
+                <path d="m320 124 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1 4-8Z" fill="var(--card-bg)"/>
+              </svg>
             </div>
-            <div class="workspace-editor" aria-label="Contoh kode HTML">
-              <span class="code-line"><span class="code-number">01</span><span class="code-tag">&lt;main</span> <span class="code-attr">class</span>=<span class="code-value">"perjalanan"</span><span class="code-tag">&gt;</span></span>
-              <span class="code-line"><span class="code-number">02</span>  <span class="code-tag">&lt;h1&gt;</span>Belajar hal baru<span class="code-tag">&lt;/h1&gt;</span></span>
-              <span class="code-line"><span class="code-number">03</span>  <span class="code-tag">&lt;p&gt;</span>Satu langkah setiap hari.<span class="code-tag">&lt;/p&gt;</span></span>
-              <span class="code-line"><span class="code-number">04</span>  <span class="code-tag">&lt;span&gt;</span>XI RPL<span class="code-tag">&lt;/span&gt;</span></span>
-              <span class="code-line"><span class="code-number">05</span><span class="code-tag">&lt;/main&gt;</span><span class="code-cursor" aria-hidden="true"></span></span>
-            </div>
-            <div class="workspace-preview">
-              <div class="preview-topline">
-                <span class="preview-label">HASIL LATIHAN</span>
-                <span class="preview-live"><i aria-hidden="true"></i> TERUS BELAJAR</span>
-              </div>
-              <div class="preview-card">
-                <span class="preview-kicker">HALO, DUNIA!</span>
-                <strong>Namaku Syifa.</strong>
-                <span class="preview-caption">Siswi · kreator pemula · XI RPL</span>
-                <span class="preview-link">Lihat perjalananku <b aria-hidden="true">↗</b></span>
-              </div>
+            <span class="hero-art-label hero-art-label-side">COBA<br>BUAT<br>ULANG</span>
+            <div class="hero-art-caption">
+              <span>CATATAN HARI INI</span>
+              <strong>Belajar sambil<br>berani mencoba.</strong>
             </div>
           </div>
-          <div class="workspace-float workspace-float-top" aria-hidden="true">
-            <span class="workspace-float-icon">&lt;/&gt;</span>
-            <span>belajar<span class="workspace-float-sub">sedikit demi sedikit</span></span>
-          </div>
-          <div class="workspace-float workspace-float-bottom" aria-hidden="true">
-            <span class="drum-mark">♪</span>
-            <span>ritme &amp; logika<span class="workspace-float-sub">dua hal yang kusukai</span></span>
-          </div>
-          <span class="workspace-orbit workspace-orbit-one" aria-hidden="true"></span>
-          <span class="workspace-orbit workspace-orbit-two" aria-hidden="true"></span>
+          <div class="hero-art-index" aria-hidden="true"><span>01</span> / IDE JADI KARYA</div>
         </aside>
       </div>
     </section>
@@ -1441,39 +1956,24 @@
           </div>
           <div class="contact-grid">
             <aside class="contact-panel" aria-labelledby="contact-channels-title">
-              <h3 id="contact-channels-title">Saluran komunikasi direct</h3>
-              <div class="contact-methods">
-                <div class="contact-method">
-                  <span class="contact-method-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5h16v11H4zM4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              <h3 id="contact-channels-title">Temukan saya di sini</h3>
+              <div class="contact-channels">
+                <a class="contact-channel" id="instagram-link" href="#kontak" aria-disabled="true" tabindex="-1">
+                  <span class="contact-channel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.7" cy="6.7" r="1" fill="currentColor"/></svg>
                   </span>
-                  <div>
-                    <span class="contact-method-label">Email</span>
-                    <a class="contact-method-value" id="contact-email-link" href="#kontak"><span id="contact-email-address">Email belum diatur</span></a>
-                  </div>
-                </div>
-                <div class="contact-method">
-                  <span class="contact-method-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none"><path d="M20 11.5a7.8 7.8 0 0 1-11.5 6.9L4 20l1.5-4.2A7.8 7.8 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.5c.4 2.6 1.9 4.1 4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <span class="contact-channel-copy"><strong>Instagram</strong><span id="instagram-handle">__syifa9_</span></span>
+                  <span class="contact-channel-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="contact-channel" id="contact-email-link" href="#kontak" aria-disabled="true" tabindex="-1">
+                  <span class="contact-channel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5h16v11H4zM4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
                   </span>
-                  <div>
-                    <span class="contact-method-label">WhatsApp</span>
-                    <a class="contact-method-value" id="whatsapp-link" href="#kontak" aria-disabled="true">Nomor belum diatur</a>
-                    <span class="contact-method-label contact-number" id="contact-number">Atur nomor di JavaScript</span>
-                  </div>
-                </div>
-                <div class="contact-method">
-                  <span class="contact-method-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none"><path d="M4 20V8l8-4 8 4v12H4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 20v-5h6v5M8 10h.01M12 10h.01M16 10h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-                  </span>
-                  <div>
-                    <span class="contact-method-label">Jurusan / kelas</span>
-                    <span class="contact-method-value">XI RPL · SMK Putra Anda</span>
-                  </div>
-                </div>
+                  <span class="contact-channel-copy"><strong>Email</strong><span id="contact-email-address">syifaaulia27062010@gmail.com</span></span>
+                  <span class="contact-channel-arrow" aria-hidden="true">↗</span>
+                </a>
               </div>
-              <p class="contact-edit-note">Ganti <code>contactEmail</code> dan <code>whatsappNumber</code> di bagian JavaScript dengan kontak milikmu.</p>
-              <a class="button contact-github" href="https://github.com/" target="_blank" rel="noreferrer">Lihat GitHub ↗</a>
+              <p class="contact-edit-note">Atur <code>instagramUsername</code> dan <code>contactEmail</code> di bagian JavaScript agar tautan kontak aktif.</p>
             </aside>
 
             <div class="contact-panel contact-form-panel">
@@ -1514,12 +2014,30 @@
   </footer>
 
   <script>
-    // Isi nomor WhatsApp sendiri dengan format internasional, contoh: 6281234567890.
-    const whatsappNumber = "";
+    // Isi username Instagram tanpa tanda @.
+    const instagramUsername = "__syifa9_";
+    const instagramUrl = "https://www.instagram.com/___syifa9__?obrf=MTUzdjN1MGgwYzMzcw==";
     // Isi email tujuan untuk mengaktifkan tautan dan formulir kontak.
-    const contactEmail = "";
+    const contactEmail = "syifaaulia27062010@gmail.com";
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
+    const themeChoices = document.querySelectorAll(".theme-choice");
+    const themeColors = {
+      peach: "#F5F1E8",
+      lavender: "#F2F0FF",
+      ocean: "#EAF4F5"
+    };
+
+    themeChoices.forEach((choice) => {
+      choice.addEventListener("click", () => {
+        const theme = choice.dataset.themeChoice;
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]').content = themeColors[theme];
+        themeChoices.forEach((item) => {
+          item.setAttribute("aria-pressed", String(item === choice));
+        });
+      });
+    });
 
     menuToggle.addEventListener("click", () => {
       const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
@@ -1538,29 +2056,33 @@
 
     document.querySelector("#year").textContent = new Date().getFullYear();
 
-    const normalizedWhatsApp = whatsappNumber.replace(/\D/g, "");
-    const whatsappLink = document.querySelector("#whatsapp-link");
-    const contactNumber = document.querySelector("#contact-number");
-    whatsappLink.addEventListener("click", (event) => {
-      if (whatsappLink.getAttribute("aria-disabled") === "true") event.preventDefault();
+    const instagramLink = document.querySelector("#instagram-link");
+    const instagramHandle = document.querySelector("#instagram-handle");
+    instagramLink.addEventListener("click", (event) => {
+      if (instagramLink.getAttribute("aria-disabled") === "true") event.preventDefault();
     });
-    if (/^62\d{8,13}$/.test(normalizedWhatsApp)) {
-      whatsappLink.href = `https://wa.me/${normalizedWhatsApp}`;
-      whatsappLink.textContent = `+${normalizedWhatsApp}`;
-      whatsappLink.target = "_blank";
-      whatsappLink.rel = "noreferrer";
-      whatsappLink.removeAttribute("aria-disabled");
-      contactNumber.textContent = `WhatsApp: +${normalizedWhatsApp}`;
+    const normalizedInstagram = instagramUsername.trim().replace(/^@/, "");
+    if (/^[A-Za-z0-9._]{1,30}$/.test(normalizedInstagram)) {
+      instagramLink.href = instagramUrl;
+      instagramLink.target = "_blank";
+      instagramLink.rel = "noreferrer";
+      instagramLink.removeAttribute("aria-disabled");
+      instagramLink.removeAttribute("tabindex");
+      instagramHandle.textContent = `@${normalizedInstagram}`;
     }
-
     const emailAddress = document.querySelector("#contact-email-address");
     const emailLink = document.querySelector("#contact-email-link");
     const contactForm = document.querySelector("#contact-form");
     const formStatus = document.querySelector("#contact-form-status");
     const normalizedEmail = contactEmail.trim();
+    emailLink.addEventListener("click", (event) => {
+      if (emailLink.getAttribute("aria-disabled") === "true") event.preventDefault();
+    });
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
       emailAddress.textContent = normalizedEmail;
       emailLink.href = `mailto:${normalizedEmail}`;
+      emailLink.removeAttribute("aria-disabled");
+      emailLink.removeAttribute("tabindex");
     }
 
     contactForm.addEventListener("submit", (event) => {
