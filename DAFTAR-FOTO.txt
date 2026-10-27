@@ -1,0 +1,6 @@
+Taruh foto bunga (format .jpg) di folder ini dengan nama persis seperti berikut:
+hero.jpg   - foto besar bagian atas (landscape)
+about.jpg  - florist sedang merangkai bunga
+h0.jpg h1.jpg h2.jpg h3.jpg - 4 buket favorit (portrait 4:5)
+c1.jpg c2.jpg c3.jpg c4.jpg c5.jpg c6.jpg - foto katalog
+Kalau sebuah foto belum ada, halaman otomatis menampilkan ilustrasi bunga sebagai gantinya.

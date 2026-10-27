@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rosewood Florist – Buket Segar Dirangkai Tangan</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf8f2;--surface:#fff;--text:#33382f;--muted:#7a7f74;--line:#eadfd3;--peach:#f9e4d8;--sage:#dde5da;--btn:#2f3d34;--btn-t:#fff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1d19;--surface:#232721;--text:#eee9e1;--muted:#a3a89c;--line:#343a31;--peach:#33292a;--sage:#2a332b;--btn:#dde5da;--btn-t:#1d241e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a1d19;--surface:#232721;--text:#eee9e1;--muted:#a3a89c;--line:#343a31;--peach:#33292a;--sage:#2a332b;--btn:#dde5da;--btn-t:#1d241e;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:400 15.5px/1.7 'Inter',system-ui,sans-serif}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0}
+.wrap{max-width:1080px;margin:auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:600 1.5rem 'Cormorant Garamond',serif;letter-spacing:.5px}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:.85rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--text)}
+@media(max-width:640px){nav ul{display:none}}
+.btn{display:inline-block;background:var(--btn);color:var(--btn-t);text-decoration:none;border:0;border-radius:6px;padding:12px 26px;font:500 .85rem 'Inter',sans-serif;cursor:pointer}
+.btn.light{background:var(--surface);color:var(--text)}
+.btn.sm{padding:8px 16px;font-size:.8rem}
+.bloom{position:relative;overflow:hidden;background:var(--peach);color:var(--text)}
+.bloom::before{content:"";position:absolute;inset:0;background:
+radial-gradient(circle at 20% 30%,rgba(236,172,184,.75) 0 14%,transparent 15%),
+radial-gradient(circle at 48% 22%,rgba(246,205,208,.9) 0 17%,transparent 18%),
+radial-gradient(circle at 78% 34%,rgba(232,160,176,.7) 0 15%,transparent 16%),
+radial-gradient(circle at 32% 68%,rgba(247,214,198,.95) 0 18%,transparent 19%),
+radial-gradient(circle at 66% 72%,rgba(238,180,190,.75) 0 16%,transparent 17%),
+radial-gradient(circle at 90% 80%,rgba(190,206,185,.8) 0 12%,transparent 13%),
+radial-gradient(circle at 8% 85%,rgba(190,206,185,.8) 0 11%,transparent 12%);filter:blur(2px)}
+.bloom.g{background:var(--sage)}
+.bloom img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.hero{margin-top:6px;border-radius:10px;min-height:460px;display:grid;place-items:center;text-align:center;padding:40px 24px}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(40,30,30,.18);z-index:1}
+.hero div{position:relative;z-index:2;max-width:520px;color:#fff}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.5rem);line-height:1.1;margin-bottom:12px;text-shadow:0 2px 14px rgba(0,0,0,.25)}
+.hero p{margin:0 0 24px;opacity:.95}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;background:var(--peach);border-radius:10px;padding:18px 22px;margin:18px 0 0}
+.feat b{display:block;font-size:.8rem;letter-spacing:.8px;text-transform:uppercase}
+.feat span{font-size:.82rem;color:var(--muted)}
+section{padding:54px 0 10px}
+.h{text-align:center;margin-bottom:28px}
+.h h2{font-size:clamp(1.8rem,3.5vw,2.4rem);letter-spacing:.5px}
+.h p{margin:4px 0 0;color:var(--muted);font-size:.92rem}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.prod .bloom{aspect-ratio:4/5;border-radius:8px}
+.prod h3{font-size:1.2rem;margin:10px 0 0}
+.prod .p{color:var(--muted);font-size:.9rem}
+.acts{display:flex;gap:8px;margin-top:8px}
+.acts button{flex:1;border:1px solid var(--line);background:none;color:var(--text);border-radius:6px;padding:8px 6px;font:500 .78rem 'Inter',sans-serif;cursor:pointer}
+.acts button:hover{background:var(--btn);color:var(--btn-t);border-color:var(--btn)}
+.about{display:grid;grid-template-columns:1fr 1fr;border-radius:10px;overflow:hidden;background:var(--sage);margin-top:50px}
+.about .bloom{min-height:340px}
+.about .txt{padding:44px;align-self:center}
+.about h2{font-size:2.2rem;margin-bottom:12px}
+.about p{color:var(--muted);margin:0 0 18px}
+@media(max-width:760px){.about{grid-template-columns:1fr}.about .txt{padding:28px}}
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.m{border-radius:8px;overflow:hidden;background:var(--sage)}
+.m .bloom{height:210px}
+.m span{display:block;padding:9px 12px;font:600 1rem 'Cormorant Garamond',serif;letter-spacing:.8px;text-transform:uppercase}
+.m.w{grid-column:span 2}.m.w .bloom{height:300px}
+@media(max-width:760px){.mosaic{grid-template-columns:1fr 1fr}.m.w .bloom{height:210px}}
+.occ{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.occ a{padding:22px 8px;font-size:.82rem;letter-spacing:.6px;text-transform:uppercase;color:var(--text);text-decoration:none;border-right:1px solid var(--line)}
+.occ a:hover{background:var(--peach)}
+.news{background:var(--peach);border-radius:10px;padding:28px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;margin-top:54px}
+.news h3{font-size:1.5rem}
+.news p{margin:0;color:var(--muted);font-size:.9rem}
+.news .f{display:flex;gap:8px;flex:1;min-width:260px;max-width:440px}
+.news input{flex:1;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:6px;padding:11px 14px;font:inherit;font-size:.88rem}
+footer{margin-top:54px;border-top:1px solid var(--line);padding:34px 0 28px}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+footer h4{margin:0 0 6px;font-size:.75rem;letter-spacing:1.8px;text-transform:uppercase}
+footer p,footer a{display:block;margin:2px 0;color:var(--muted);font-size:.88rem;text-decoration:none}
+.copy{text-align:center;margin-top:24px;font-size:.78rem;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));transform:translate(-50%,120px);background:var(--btn);color:var(--btn-t);padding:11px 20px;border-radius:99px;font-size:.85rem;transition:transform .3s;z-index:5}
+.toast.show{transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="logo">Rosewood Florist</div>
+<ul><li><a href="#hits">Terlaris</a></li><li><a href="#tentang">Tentang</a></li><li><a href="#katalog">Katalog</a></li><li><a href="#kontak">Kontak</a></li></ul>
+<a class="btn sm" id="wa" href="https://wa.me/6281234567890" target="_blank" rel="noopener">Pesan via WhatsApp</a></nav>
+
+<header class="bloom hero"><img data-photo="hero" alt="Bunga mawar segar" hidden>
+<div><h1>Kami merangkai perasaan menjadi buket</h1><p>Bunga segar dari florist kami, diantar ke tujuanmu di hari yang sama. Pilih buket untuk cinta, persahabatan, atau sekadar hari yang indah.</p><a class="btn light" href="#katalog">Lihat Katalog</a></div></header>
+
+<div class="feat">
+<div><b>Antar hari yang sama</b><span>Pesan sebelum pukul 14.30</span></div>
+<div><b>Segar dari kebun</b><span>Dipilih satu per satu</span></div>
+<div><b>Florist berpengalaman</b><span>Dirangkai dengan tangan</span></div>
+<div><b>Kepuasan terjamin</b><span>Kami selalu siap membantu</span></div></div>
+
+<section id="hits"><div class="h"><h2>Buket Favorit Musim Ini</h2><p>Dirangkai segar setelah kamu memesan</p></div>
+<div class="grid4" id="hitsGrid"></div></section>
+
+<div class="about" id="tentang"><div class="bloom g"><img data-photo="about" alt="Florist merangkai bunga" hidden></div>
+<div class="txt"><h2>Tentang Kami</h2><p>Sulit menemukan kata yang pas, karena itu kami memberimu kesempatan berbicara lewat bunga. Kami hanya memakai tangkai segar pilihan, dan setiap buket dirangkai dengan tangan agar terlihat sederhana namun tetap seperti karya seni.</p><a class="btn" href="#kontak">Hubungi Kami</a></div></div>
+
+<section id="katalog"><div class="h"><h2>Katalog</h2></div>
+<div class="mosaic">
+<div class="m w"><div class="bloom"><img data-photo="c1" alt="Mono buket" hidden></div><span>Mono Buket</span></div>
+<div class="m"><div class="bloom g"><img data-photo="c2" alt="Komposisi" hidden></div><span>Komposisi</span></div>
+<div class="m"><div class="bloom"><img data-photo="c3" alt="Keranjang bunga" hidden></div><span>Keranjang</span></div>
+<div class="m"><div class="bloom"><img data-photo="c4" alt="Populer" hidden></div><span>Populer</span></div>
+<div class="m w"><div class="bloom g"><img data-photo="c5" alt="Buket warna-warni" hidden></div><span>Buket Warna-warni</span></div>
+<div class="m"><div class="bloom"><img data-photo="c6" alt="Buket asimetris" hidden></div><span>Asimetris</span></div>
+</div></section>
+
+<section><div class="h"><h2>Pilih Sesuai Momen</h2></div>
+<div class="occ"><a href="#kontak">Ulang tahun</a><a href="#kontak">Anniversary</a><a href="#kontak">Selamat</a><a href="#kontak">Terima kasih</a><a href="#kontak">Duka cita</a><a href="#kontak" style="border:0">Bayi baru</a></div></section>
+
+<div class="news"><div><h3>Diskon 10% pesanan pertama</h3><p>Gabung dan dapatkan promo spesial dari kami.</p></div>
+<div class="f"><input type="email" placeholder="Alamat email kamu" aria-label="Email"><button class="btn" id="sub">Berlangganan</button></div></div>
+</div>
+
+<footer id="kontak"><div class="wrap"><div class="fg">
+<div><div class="logo">Rosewood Florist</div><p>Florist butik dengan rangkaian segar setiap hari.</p></div>
+<div><h4>Jam buka</h4><p>Senin–Sabtu 08.00–20.00</p><p>Minggu 09.00–17.00</p></div>
+<div><h4>Hubungi</h4><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp 0812-3456-7890</a><a href="#">Instagram @rosewoodflorist</a></div>
+</div><div class="copy">© 2026 Rosewood Florist. Semua hak dilindungi.</div></div></footer>
+<div class="toast" id="toast"></div>
+
+<script>
+const H=[["Rose Pink Mix",250000],["Kelembutan",275000],["Kebahagiaan",230000],["Peri Hutan",210000]];
+const fmt=v=>"Rp "+v.toLocaleString("id-ID");
+const t=document.getElementById("toast");
+function toast(m){t.textContent=m;t.classList.add("show");clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("show"),2200)}
+document.getElementById("hitsGrid").innerHTML=H.map((h,i)=>`<div class="prod"><div class="bloom ${i%2?"g":""}"><img data-photo="h${i}" alt="${h[0]}" hidden></div><h3>${h[0]}</h3><div class="p">${fmt(h[1])}</div><div class="acts"><button data-n="${h[0]}">+ Keranjang</button><a class="btn sm" style="flex:1;text-align:center;padding:8px 6px" target="_blank" rel="noopener" href="https://wa.me/6281234567890?text=${encodeURIComponent("Halo, saya ingin memesan buket "+h[0])}">Pesan</a></div></div>`).join("");
+document.getElementById("hitsGrid").onclick=e=>{const b=e.target.closest("button");if(b)toast(b.dataset.n+" ditambahkan ✓")};
+document.getElementById("sub").onclick=()=>toast("Terima kasih sudah berlangganan 💌");
+
+document.querySelectorAll("img[data-photo]").forEach(i=>{i.onload=()=>{i.hidden=false};i.src="images/"+i.dataset.photo+".jpg"});
+</script>
+</body>
+</html>
